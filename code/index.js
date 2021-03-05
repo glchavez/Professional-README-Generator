@@ -13,43 +13,43 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'Description',
+        name: 'description',
         message: 'Enter a short description of your project.',
     },
     {
         type: 'input',
-        name: 'Installation',
+        name: 'installation',
         message: 'Enter installation instructions for your project.',
     },
     {
         type: 'input',
-        name: 'Usage',
+        name: 'usage',
         message: 'Enter usage information for your project.',
     },
     {
         type: 'input',
-        name: 'Contributing',
+        name: 'contributing',
         message: 'Enter contribution guidelines for your project.',
     },
     {
         type: 'input',
-        name: 'Tests',
+        name: 'tests',
         message: 'Enter test instructions for your project.',
     },
     {
         type: 'list',
-        name: 'License',
+        name: 'license',
         message: 'What license would you like for your project?',
         choices: [ 'Choice A', 'Choice B', 'Choice C', 'Choice D' ],
     },
     {
         type: 'input',
-        name: 'Username',
+        name: 'username',
         message: 'What is your GitHub username?',
     },
     {
         type: 'input',
-        name: 'Email',
+        name: 'email',
         message: 'What is your email?',
     },
 ]);
