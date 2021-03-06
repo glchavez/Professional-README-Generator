@@ -2,8 +2,6 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 
-  let licenseBadge = ""
-
   switch (license) {
     case 'MIT':
       licenseBadge = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
@@ -17,8 +15,8 @@ function renderLicenseBadge(license) {
     case 'BSD 3':
       licenseBadge = "![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)";
       break;
-      case 'None':
-       return licenseBadge = "";
+    case 'None':
+      return licenseBadge = "";
   }
 
   return licenseBadge;
@@ -28,8 +26,6 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   
-  let licenseLink = ""
-
   switch (license) {
     case 'MIT':
       licenseLink = "[license](https://opensource.org/licenses/MIT)";
@@ -43,8 +39,8 @@ function renderLicenseLink(license) {
     case 'BSD 3':
       licenseLink = "[license](https://opensource.org/licenses/BSD-3-Clause)";
       break;
-      case 'None':
-       return licenseLink = "";
+    case 'None':
+      return licenseLink = "";
   }
 
   return licenseLink;
@@ -53,8 +49,6 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-
-  let licenseSection = ""
 
   switch (license) {
     case 'MIT':
@@ -69,8 +63,8 @@ function renderLicenseSection(license) {
     case 'BSD 3':
       licenseSection = "This project is licensed under the BSD 3 " + renderLicenseLink(license) + ".";
       break;
-      case 'None':
-       return licenseSection = "";
+    case 'None':
+      return licenseSection = "";
   }
 
   return licenseSection;
