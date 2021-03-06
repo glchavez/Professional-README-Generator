@@ -32,16 +32,16 @@ function renderLicenseLink(license) {
 
   switch (license) {
     case 'MIT':
-      licenseLink = "Click [Here](https://opensource.org/licenses/MIT) for more information about the license.";
+      licenseLink = "[license](https://opensource.org/licenses/MIT)";
       break;
     case 'Apache 2.0':
-      licenseLink = "Click [Here](https://opensource.org/licenses/Apache-2.0) for more information about the license.";
+      licenseLink = "[license](https://opensource.org/licenses/Apache-2.0)";
       break;
     case 'GPL 3.0':
-      licenseLink = "Click [Here](https://www.gnu.org/licenses/gpl-3.0) for more information about the license.";
+      licenseLink = "[license](https://www.gnu.org/licenses/gpl-3.0)";
       break;
     case 'BSD 3':
-      licenseLink = "Click [Here](https://opensource.org/licenses/BSD-3-Clause) for more information about the license.";
+      licenseLink = "[license](https://opensource.org/licenses/BSD-3-Clause)";
       break;
       case 'None':
        return licenseLink = "";
@@ -53,7 +53,28 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-}
+
+  let licenseSection = ""
+
+  switch (license) {
+    case 'MIT':
+      licenseSection = "This project is licensed under the MIT " + renderLicenseLink(license) + ".";
+      break;
+    case 'Apache 2.0':
+      licenseSection = "This project is licensed under the Apache 2.0 " + renderLicenseLink(license) + ".";
+      break;
+    case 'GPL 3.0':
+      licenseSection = "This project is licensed under the GPL 3.0 " + renderLicenseLink(license) + ".";
+      break;
+    case 'BSD 3':
+      licenseSection = "This project is licensed under the BSD 3 " + renderLicenseLink(license) + ".";
+      break;
+      case 'None':
+       return licenseSection = "";
+  }
+
+  return licenseSection;
+};
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -97,7 +118,7 @@ function generateMarkdown(data) {
 
 
   ## License
-  ${renderLicenseLink(data.license)}`
+  ${renderLicenseSection(data.license)}`
 }
 
 module.exports = generateMarkdown;
