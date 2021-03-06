@@ -23,11 +23,32 @@ function renderLicenseBadge(license) {
 
   return licenseBadge;
 };  
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+  
+  let licenseLink = ""
 
-}
+  switch (license) {
+    case 'MIT':
+      licenseLink = "Click [Here](https://opensource.org/licenses/MIT) for more information about the license.";
+      break;
+    case 'Apache 2.0':
+      licenseLink = "Click [Here](https://opensource.org/licenses/Apache-2.0) for more information about the license.";
+      break;
+    case 'GPL 3.0':
+      licenseLink = "Click [Here](https://www.gnu.org/licenses/gpl-3.0) for more information about the license.";
+      break;
+    case 'BSD 3':
+      licenseLink = "Click [Here](https://opensource.org/licenses/BSD-3-Clause) for more information about the license.";
+      break;
+      case 'None':
+       return licenseLink = "";
+  }
+
+  return licenseLink;
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -76,7 +97,7 @@ function generateMarkdown(data) {
 
 
   ## License
-  This project is licensed under the ${data.license} license.`;
+  ${renderLicenseLink(data.license)}`
 }
 
 module.exports = generateMarkdown;
