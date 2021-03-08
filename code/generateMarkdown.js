@@ -106,7 +106,7 @@ function generateMarkdown(data) {
 
 
   ## Questions
-  To review the code for this application, visit my GitHub page at github.com/${data.username}. For any additional questions, feel free to email me at ${data.email}.
+  To review the code for this application, visit my [GitHub page](https://github.com/${data.username}). For any additional questions, feel free to email me at ${data.email}.
 
 
   ## License

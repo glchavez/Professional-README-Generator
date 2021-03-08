@@ -32,7 +32,7 @@
 
 
   ## Questions
-  To review the code for this application, visit my GitHub page at github.com/glchavez. For any additional questions, feel free to email me at myemail@gmail.com.
+  To review the code for this application, visit my [GitHub page](https://github.com/glchavez). For any additional questions, feel free to email me at myemail@gmail.com.
 
 
   ## License
