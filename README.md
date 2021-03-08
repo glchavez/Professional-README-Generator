@@ -18,11 +18,11 @@ Please note, you will need node.js to run this repository on your computer.
 
 To create a ReadMe file, you will need to run the index.js file in the "code" folder of the Professional-README-Generator repository in your terminal. In the terminal, enter "node index.js". This will start the list of questions that asks the user what they would like to be included for each section of their ReadMe. Once all of the questions have been answered, a ReadMe will be created on your computer. You can then move the ReadMe to the desired folder on your computer.
 
-For a video example, please click this [link]().
+For a video example, please click this [link](https://drive.google.com/file/d/1WTPi3H7LBCCQyG2VdSvAB2iG4ZG51mUK/view?usp=sharing).
 
 The created ReadMe will look as such:
 
-[Example ReadMe]()
+![Example ReadMe](/media/example_README.png)
 
 
 ## Credits
