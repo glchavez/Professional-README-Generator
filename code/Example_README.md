@@ -16,23 +16,23 @@
 
 
   ## installation
-  This section will hold instructions for installation.
+  If installation instructions are needed, include them here.
 
 
   ## Usage
-  This section will include usage information.
+  Describe how to use your project.
 
 
   ## Tests
-  If there are test instructions, they go in this section.
+  Test instructions will be provided in this section of the ReadMe.
 
 
   ## Contributing
-  This section details contribution details for your project.
+  If you would like others to contribute to your project, give them instructions on how to do so here.
 
 
   ## Questions
-  To review the code for this application, visit my GitHub page at github.com/glchavez. For any additional questions, feel free to email me at youremail@gmail.com.
+  To review the code for this application, visit my GitHub page at github.com/glchavez. For any additional questions, feel free to email me at myemail@gmail.com.
 
 
   ## License
