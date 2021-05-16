@@ -1,8 +1,10 @@
 # Professional-README-Generator
 
-## Description
+This repository takes in user input from pre-defined questions and creates a simple ReadMe document.
 
-This repository takes in user input from pre-defined questions and creates a simple ReadMe document. It is intended to help individuals make a ReadMe file in less time, helping them spend more time on coding. 
+## Overview
+
+This application is intended to help individuals make a ReadMe file in less time, helping them spend more time on coding. 
 
 A challenge I faced when creating this repository was taking user input for the license section and inserting the chosen type of license badge and link into the ReadMe file. For future improvements, I would like to provide a bigger selection of license options to choose from and not listing a section on the ReadMe if the user does not enter anything in that section.
 
